@@ -1,31 +1,46 @@
-#include <iostream>
-#include <string>
+#include<iostream>
+#include<string.h>
 using namespace std;
 
-class IndianState {
-public:
-    static std::string capital;
-    static std::string language;
-    static int population;
-
-    static void displayDetails() {
-        std::cout << "Capital: " << capital << std::endl;
-        std::cout << "Language: " << language << std::endl;
-        std::cout << "Population: " << population << std::endl;
-    }
+class india{
+	public :
+		
+	static char states[100];
+	char drystates[100];
+	char wetstates[100];
+	char rainfallstates[100];
+	char hotstates[100];
+	public :
+	
+	void setdata(){
+		cout<<"Enter drystates name = ";
+		cin>>drystates;
+		cout<<"Enter wetstates name = ";
+		cin>>wetstates;
+		cout<<"Enter rainfallstates name = ";
+		cin>>rainfallstates;
+		cout<<"Enter hotstates names = ";
+		cin>>hotstates;
+		
+		
+	}
+	void getdata(){
+		cout<<"Enter states"<<states<<endl;
+		cout<<"Enter drystates name ="<<drystates<<endl;
+		cout<<"Enter wetstates name ="<<wetstates<<endl;
+		cout<<"Enter rainfallstates name ="<<rainfallstates<<endl;
+		cout<<"Enter hotstates name ="<<hotstates<<endl;
+	}
 };
+char india::states[100]="=29";
 
-std::string IndianState::capital = "";
-std::string IndianState::language = "";
-int IndianState::population = 0;
-
-int main() {
-    IndianState::capital = "New Delhi";
-    IndianState::language = "Hindi";
-    IndianState::population = 1300000000;
-
-    IndianState::displayDetails();
-
-    return 0;
+int main(){
+	india ii;
+	
+	ii.setdata();
+	ii.getdata();
+	
+	return 0;
+	
 }
 
