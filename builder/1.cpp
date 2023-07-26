@@ -15,25 +15,25 @@ class Employee{
 	
 	
 	void setdata(){
-		 cout<<"enter id =";
+		 cout<<"enter id = ";
 		 cin>>id;
-		 cout<<"enter name =";
+		 cout<<"enter name = ";
 		 cin>>name;
-		 cout<<"enter role =";
+		 cout<<"enter role = ";
 		 cin>>role;
-		 cout<<"enter salary =";
+		 cout<<"enter salary = ";
 		 cin>>salary;
-		 cout<<"enter experience =";
+		 cout<<"enter experience = ";
 		 cin>>experience;
-		 cout<<"enter address =";
+		 cout<<"enter address = ";
 		 cin>>address;
-		 cout<<"enter email =";
+		 cout<<"enter email = ";
 		 cin>>email;
-		 cout<<"enter contact =";
+		 cout<<"enter contact = ";
 		 cin>>contact;
 	}
 	void getdata(){
-		 cout<<"enter id ="<<id<<endl;
+		 cout<<"\nenter id ="<<id<<endl;
 		 cout<<"enter name ="<<name<<endl;
 		 cout<<"enter role ="<<role<<endl;
 		 cout<<"enter salary ="<<salary<<endl;
